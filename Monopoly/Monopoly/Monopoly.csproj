@@ -43,11 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\Extensions\CircularLinkedList.cs" />
+    <Compile Include="Infrastructure\Factories\GameSpaceFactory.cs" />
+    <Compile Include="Infrastructure\Factories\IGameSpaceFactory.cs" />
+    <Compile Include="Models\GameBoard.cs" />
+    <Compile Include="Models\Hotel.cs" />
+    <Compile Include="Models\IGameSpace.cs" />
+    <Compile Include="Models\Jail.cs" />
+    <Compile Include="Models\Lottery.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\EmptyGameSpace.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\GameBoardInitializer.cs" />
+    <Compile Include="Services\IGameBoardInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\Constants\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
