@@ -5,8 +5,6 @@ namespace Monopoly.Services
 {
     public interface IGameBoardInitializer
     {
-        GameBoard Initialize(
-                    IList<Player> players,
-                    IList<string> gameSpaceKeys);
+        GameBoard Initialize(int playersCount, IList<string> gameSpaceKeys);
     }
 }

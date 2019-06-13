@@ -1,4 +1,4 @@
-﻿using Monopoly.Models;
+﻿using Monopoly.Models.GameSpaces;
 using System;
 using System.Collections.Generic;
 
